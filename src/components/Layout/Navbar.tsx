@@ -19,6 +19,7 @@ const Navbar = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+  
 
   return (
   <nav className={`bg-gray-900 py-3 md:px-8 sticky top-0 z-50 transition-transform duration-500 ${show ? 'translate-y-0' : '-translate-y-full'}`}>

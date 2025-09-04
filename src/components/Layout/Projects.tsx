@@ -12,7 +12,7 @@ const projects = [
     description:
       "Portafolio web profesional desarrollado con React y Tailwind CSS, diseñado para destacar mi experiencia, habilidades y proyectos de manera visual y moderna. Incluye navegación suave, animaciones, menú lateral interactivo, sección de contacto con formulario funcional y descarga de CV en varios idiomas. El diseño es completamente responsive y está optimizado para una experiencia de usuario atractiva y accesible en cualquier dispositivo.",
     techs: ["React", "Tailwind", "Framer Motion"],
-    repo: "https://github.com/usuario/portafolio",
+    repo: "https://github.com/LeiderTorres16/Portafolio",
   },
   {
     title: "App de Rick and Morty",

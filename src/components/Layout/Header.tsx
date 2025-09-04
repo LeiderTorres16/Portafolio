@@ -196,7 +196,7 @@ const FloatingLightsBg = () => (
 
 const Header = () => {
   return (
-    <header className="relative flex items-center justify-center min-h-[60vh] md:min-h-[80vh] bg-gradient-to-b from-gray-900 via-gray-950 to-gray-900 overflow-hidden">
+  <header id="inicio" className="relative flex items-center justify-center min-h-[60vh] md:min-h-[80vh] bg-gradient-to-b from-gray-900 via-gray-950 to-gray-900 overflow-hidden">
       <FloatingLightsBg />
       <div className="relative z-10 flex flex-col items-center text-center px-4">
         <h1 className="text-4xl md:text-6xl font-extrabold text-white drop-shadow-lg mb-4">

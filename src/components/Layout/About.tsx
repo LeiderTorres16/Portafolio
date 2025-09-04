@@ -20,10 +20,10 @@ const About = () => {
 					<a href="/cv-en.pdf" download className="px-6 py-3 rounded-lg bg-sky-500 hover:bg-sky-600 text-white font-semibold transition-colors">Descargar CV EN</a>
 				</div>
 				<div className="flex flex-row gap-4 justify-center">
-					<a href="https://github.com/usuario" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-white/10 hover:bg-white/20 transition-colors text-white flex items-center">
+					<a href="https://github.com/LeiderTorres16" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-white/10 hover:bg-white/20 transition-colors text-white flex items-center">
 						<Github className="w-6 h-6" />
 					</a>
-					<a href="https://linkedin.com/in/usuario" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-white/10 hover:bg-white/20 transition-colors text-white flex items-center">
+					<a href="https://www.linkedin.com/in/leider-andres-torres-avila-a56970148" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-white/10 hover:bg-white/20 transition-colors text-white flex items-center">
 						<Linkedin className="w-6 h-6" />
 					</a>
 				</div>

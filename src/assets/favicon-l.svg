@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-labelledby="title desc">
+  <title>Favicon L</title>
+  <desc>Letter L in cyan on a dark blue background</desc>
+  <!-- Dark blue background -->
+  <rect width="512" height="512" fill="#0A2540" />
+  <!-- Cyan L made from rectangles (no fonts used) -->
+  <g fill="#22D3EE">
+    <!-- Vertical bar -->
+    <rect x="140" y="80" width="120" height="360" rx="30" ry="30"/>
+    <!-- Horizontal bar -->
+    <rect x="140" y="320" width="240" height="120" rx="30" ry="30"/>
+  </g>
+</svg>

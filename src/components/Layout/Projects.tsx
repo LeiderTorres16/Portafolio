@@ -8,7 +8,7 @@ import { BiLogoTailwindCss } from "react-icons/bi";
 const projects = [
   {
     title: "Portafolio Web",
-    image: "../../../public/images/Portafolio.png",
+    image: "/images/Portafolio.png",
     description:
       "Portafolio web profesional desarrollado con React y Tailwind CSS, diseñado para destacar mi experiencia, habilidades y proyectos de manera visual y moderna. Incluye navegación suave, animaciones, menú lateral interactivo, sección de contacto con formulario funcional y descarga de CV en varios idiomas. El diseño es completamente responsive y está optimizado para una experiencia de usuario atractiva y accesible en cualquier dispositivo.",
     techs: ["React", "Tailwind", "Framer Motion"],
@@ -16,7 +16,7 @@ const projects = [
   },
   {
     title: "App de Rick and Morty",
-    image: "../../../public/images/Rick_and_Morty.jpg",
+    image: "/images/Rick_and_Morty.jpg",
     description:
       "Este proyecto es una aplicación web desarrollada con Next.js y React para visualizar personajes de la serie Rick and Morty. Utiliza Leaflet para mostrar un mapa interactivo de Colombia con marcadores en Valledupar y Bogotá. Además, se puede agregar y eliminar personajes a la lista de favoritos y hacer estas modificaciones persistentes utilizando localStorage.",
     techs: ["Mapa", "NextJS", "API", "Tailwind"],
@@ -24,7 +24,7 @@ const projects = [
   },
   {
     title: "Movie Management App",
-    image: "../../../public/images/movie.jpg",
+    image: "/images/movie.jpg",
     description:
       "Este proyecto es un panel de películas que utiliza la API de TMDB (The Movie Database) para mostrar una lista de películas, permitir búsquedas, filtrar resultados por idioma, región y año, ademas de crear listas y añadir peliculas a esta, ademas se usa la autenticación de usuarios propia de la API de TMDB para gestionar las listas de peliculas de cada usuario.",
     techs: ["React", "API", "Tailwind"],

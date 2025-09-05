@@ -1,7 +1,19 @@
 import { FaLinkedin, FaWhatsapp } from "react-icons/fa";
+
 import { useState } from "react";
 
-const initialForm = {
+type FormType = {
+  nombre: string;
+  apellido: string;
+  telefono: string;
+  ciudad: string;
+  pais: string;
+  correo: string;
+  asunto: string;
+  mensaje: string;
+};
+
+const initialForm: FormType = {
   nombre: "",
   apellido: "",
   telefono: "",
@@ -13,12 +25,12 @@ const initialForm = {
 };
 
 export default function Contacto() {
-  const [form, setForm] = useState(initialForm);
+  const [form, setForm] = useState<FormType>(initialForm);
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState("");
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>): void => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 

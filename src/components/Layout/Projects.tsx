@@ -13,6 +13,7 @@ const projects = [
       "Portafolio web profesional desarrollado con React y Tailwind CSS, diseñado para destacar mi experiencia, habilidades y proyectos de manera visual y moderna. Incluye navegación suave, animaciones, menú lateral interactivo, sección de contacto con formulario funcional y descarga de CV en varios idiomas. El diseño es completamente responsive y está optimizado para una experiencia de usuario atractiva y accesible en cualquier dispositivo.",
     techs: ["React", "Tailwind", "Framer Motion"],
     repo: "https://github.com/LeiderTorres16/Portafolio",
+    type: "frontend",
   },
   {
     title: "App de Rick and Morty",
@@ -21,6 +22,7 @@ const projects = [
       "Este proyecto es una aplicación web desarrollada con Next.js y React para visualizar personajes de la serie Rick and Morty. Utiliza Leaflet para mostrar un mapa interactivo de Colombia con marcadores en Valledupar y Bogotá. Además, se puede agregar y eliminar personajes a la lista de favoritos y hacer estas modificaciones persistentes utilizando localStorage.",
     techs: ["Mapa", "NextJS", "API", "Tailwind"],
     repo: "https://github.com/LeiderTorres16/rick-and-morty-app",
+    type: "frontend",
   },
   {
     title: "Movie Management App",
@@ -29,6 +31,7 @@ const projects = [
       "Este proyecto es un panel de películas que utiliza la API de TMDB (The Movie Database) para mostrar una lista de películas, permitir búsquedas, filtrar resultados por idioma, región y año, ademas de crear listas y añadir peliculas a esta, ademas se usa la autenticación de usuarios propia de la API de TMDB para gestionar las listas de peliculas de cada usuario.",
     techs: ["React", "API", "Tailwind"],
     repo: "https://github.com/LeiderTorres16/movie-management-app",
+    type: "frontend",
   },
 ];
 
@@ -63,12 +66,23 @@ const Projects = () => {
             <div className="relative rounded-2xl overflow-hidden">
               <div className="absolute inset-0 z-0 rounded-2xl pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-gradient-border bg-gradient-to-tr from-cyan-400 via-sky-400 to-emerald-300"></div>
               <div className="relative bg-[#181f2a] rounded-2xl h-full flex flex-col items-start shadow-lg group-hover:shadow-2xl transition-all duration-300 min-h-[430px]">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-40 object-cover rounded-t-2xl mb-4 border-b border-gray-800"
-                  style={{ background: "#232946" }}
-                />
+                <div className="relative w-full h-40 mb-4">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-40 object-cover rounded-t-2xl border-b border-gray-800"
+                    style={{ background: "#232946" }}
+                  />
+                  <span
+                    className={`absolute top-2 right-2 px-3 py-1 rounded-full text-xs font-semibold shadow-lg z-10
+                      ${project.type === 'frontend' ? 'bg-cyan-400 text-gray-900' : project.type === 'backend' ? 'bg-emerald-400 text-gray-900' : 'bg-gradient-to-r from-cyan-400 to-emerald-400 text-gray-900'}`}
+                    style={{ pointerEvents: 'none' }}
+                  >
+                    {project.type === 'frontend' && 'Frontend'}
+                    {project.type === 'backend' && 'Backend'}
+                    {project.type === 'fullstack' && 'Fullstack'}
+                  </span>
+                </div>
                 <div className="p-5 flex flex-col flex-1 w-full">
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.techs.slice(0, 3).map((tech) => {
